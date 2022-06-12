@@ -61,6 +61,9 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
     // it handles both spotifyClient and docClient
     const tokenBefore = spotifyToken.access_token
     const ts = Date.now()
+    // probably it's better to have two different methods
+    // rather than one method returning two types
+    // but this is one way to do it if you have to
     const responseItems = await spotifyClient.getTopItems(spotifyToken, type, range, limit)
     if (tokenBefore != spotifyToken.access_token) {
       spotifyToken.ts = ts
