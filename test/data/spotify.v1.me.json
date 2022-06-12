@@ -1,0 +1,28 @@
+{
+  "country": "NZ",
+  "display_name": "Joe",
+  "email": "joevanbo@pm.me",
+  "explicit_content": {
+    "filter_enabled": false,
+    "filter_locked": false
+  },
+  "external_urls": {
+    "spotify": "https://open.spotify.com/user/xnmacgqaaa6a1xi7uy2k1fe7w"
+  },
+  "followers": {
+    "href": null,
+    "total": 7
+  },
+  "href": "https://api.spotify.com/v1/users/xnmacgqaaa6a1xi7uy2k1fe7w",
+  "id": "xnmacgqaaa6a1xi7uy2k1fe7w",
+  "images": [
+    {
+      "height": null,
+      "url": "https://scontent.fblr22-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fblr22-1.fna&edm=AP4hL3IEAAAA&oh=29672e6f9faf84ea0d1d9112f1fbfe95&oe=61C4BB34",
+      "width": null
+    }
+  ],
+  "product": "premium",
+  "type": "user",
+  "uri": "spotify:user:xnmacgqaaa6a1xi7uy2k1fe7w"
+}

@@ -1,0 +1,270 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'Spotty api'
+
+Parameters:
+  DEBUG:
+    Type: String
+    Default: "true"
+    AllowedValues:
+      - "true"
+      - "false"
+  JwtSecret:
+    Type: String
+    Default: '{{resolve:ssm:JafJwtSecret:1}}'
+    AllowedValues:
+      - '{{resolve:ssm:JafJwtSecret:1}}'
+  SpotifyClientId:
+    Type: String
+    Default: '{{resolve:ssm:JafSpotifyClientId:1}}'
+    AllowedValues:
+      - '{{resolve:ssm:JafSpotifyClientId:1}}'
+  SpotifyClientSecret:
+    Type: String
+    Default: '{{resolve:ssm:JafSpotifySecret:1}}'
+    AllowedValues:
+      - '{{resolve:ssm:JafSpotifySecret:1}}'
+  # will update this as required
+  SpotifyRedirectUri:
+    Type: String
+    Default: https://daswxepyym8y0.cloudfront.net
+    AllowedValues:
+      - https://daswxepyym8y0.cloudfront.net
+
+Globals:
+  Function:
+    Timeout: 15
+    MemorySize: 128
+    Runtime: nodejs14.x
+    Environment:
+      Variables:
+        DEBUG: !Ref DEBUG
+        JwtSecret: !Ref JwtSecret
+        SpotifyClientId: !Ref SpotifyClientId
+        SpotifyClientSecret: !Ref SpotifyClientSecret
+        SpotifyRedirectUri: !Ref SpotifyRedirectUri
+
+Resources:
+  JafMembersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: JafMembers
+      AttributeDefinitions:
+        - AttributeName: email
+          AttributeType: S
+      KeySchema:
+        - AttributeName: email
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+
+  SpotifyProfileTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: SpotifyProfile
+      AttributeDefinitions:
+        - AttributeName: spotifyId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: spotifyId
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+
+  HttpApiGateway:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: v1
+      Cors:
+        AllowHeaders: "*"
+        AllowMethods: "*"
+        AllowOrigin: "*"
+
+  LoginFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./dist
+      Handler: functions/login.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref JafMembersTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref SpotifyProfileTable
+      Events:
+        PostLogin:
+          Type: Api
+          Properties:
+            Path: /login
+            Method: post
+            RestApiId: !Ref HttpApiGateway
+        OptionsLogin:
+          Type: Api
+          Properties:
+            Path: /login
+            Method: options
+            RestApiId: !Ref HttpApiGateway
+
+  RegisterFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./dist
+      Handler: functions/register.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref JafMembersTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref SpotifyProfileTable
+      Events:
+        PostRegister:
+          Type: Api
+          Properties:
+            Path: /register
+            Method: post
+            RestApiId: !Ref HttpApiGateway
+        OptionsRegister:
+          Type: Api
+          Properties:
+            Path: /register
+            Method: options
+            RestApiId: !Ref HttpApiGateway
+
+  ValidateJwtFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./dist
+      Handler: functions/validateJwt.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref SpotifyProfileTable
+      Events:
+        GetTokenValidate:
+          Type: Api
+          Properties:
+            Path: /token/validate
+            Method: get
+            RestApiId: !Ref HttpApiGateway
+        OptionsTokenValidate:
+          Type: Api
+          Properties:
+            Path: /token/validate
+            Method: options
+            RestApiId: !Ref HttpApiGateway
+
+  SpotifyTopFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./dist
+      Handler: functions/spotifyTop.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref SpotifyProfileTable
+      Events:
+        GetSpotifyTop:
+          Type: Api
+          Properties:
+            Path: /spotify/top
+            Method: get
+            RestApiId: !Ref HttpApiGateway
+        OptionsSpotifyTop:
+          Type: Api
+          Properties:
+            Path: /spotify/top
+            Method: options
+            RestApiId: !Ref HttpApiGateway
+
+  QuizFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./dist
+      Handler: functions/httpQuiz.handler
+      Policies:
+        - S3CrudPolicy:
+            BucketName: joevanbucket
+        - LambdaInvokePolicy:
+            FunctionName: !Ref GenerateQuizFunction
+      Environment:
+        Variables:
+          GenerateQuizFnName: !Ref GenerateQuizFunction
+      Events:
+        GetQuiz:
+          Type: Api
+          Properties:
+            Path: /quiz
+            Method: get
+            RestApiId: !Ref HttpApiGateway
+        PostQuiz:
+          Type: Api
+          Properties:
+            Path: /quiz
+            Method: post
+            RestApiId: !Ref HttpApiGateway
+        OptionsQuiz:
+          Type: Api
+          Properties:
+            Path: /quiz
+            Method: options
+            RestApiId: !Ref HttpApiGateway
+        PostGenerateQuiz:
+          Type: Api
+          Properties:
+            Path: /quiz/generate
+            Method: post
+            RestApiId: !Ref HttpApiGateway
+        OptionsGenerateQuiz:
+          Type: Api
+          Properties:
+            Path: /quiz/generate
+            Method: options
+            RestApiId: !Ref HttpApiGateway
+
+  GenerateQuizFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./dist
+      Handler: functions/generateQuiz.handler
+      Policies:
+        - S3CrudPolicy:
+            BucketName: joevanbucket
+        - DynamoDBCrudPolicy:
+            TableName: !Ref SpotifyProfileTable
+      # Prefer to manually generate when everyone's together
+      # Events:
+      #   ScheduleGenerateNewQuiz:
+      #     Type: Schedule
+      #     Properties:
+      #       Name: SqsPoll1PerMin
+      #       Description: Poll SQS Queue once every minute
+      #       # https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html
+      #       # schedule expression is not valid todo: fix
+      #       Schedule: "cron(0 2 ? * FRI *)" # run once a week every friday at 3pm?
+
+Outputs:
+  JafMembersTable:
+    Description: Store user records in nosql
+    Value: !Ref JafMembersTable
+  SpotifyProfileTable:
+    Description: Store spotify records in nosql
+    Value: !Ref SpotifyProfileTable
+  HttpApiGateway:
+    Description: ApiGateway between front end requests and backend lambda
+    Value: !Ref HttpApiGateway
+  RegisterFunction:
+    Description: Handle register
+    Value: !Ref RegisterFunction
+  LoginFunction:
+    Description: Handle login
+    Value: !Ref LoginFunction
+  ValidateJwtFunction:
+    Description: Handle validate jwt
+    Value: !Ref ValidateJwtFunction
+  SpotifyTopFunction:
+    Description: Get spotify top items
+    Value: !Ref SpotifyTopFunction
+  QuizFunction:
+    Description: Get and submit quiz
+    Value: !Ref QuizFunction
+  GenerateQuizFunction:
+    Description: Generate quiz
+    Value: !Ref GenerateQuizFunction

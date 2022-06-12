@@ -1,0 +1,399 @@
+{
+  "items": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6S3Z6Me30mtdm526H17v8k"
+      },
+      "followers": {
+        "href": null,
+        "total": 21337
+      },
+      "genres": [
+        "london indie"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6S3Z6Me30mtdm526H17v8k",
+      "id": "6S3Z6Me30mtdm526H17v8k",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebbb7f44285ef907abe81a303e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174bb7f44285ef907abe81a303e",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178bb7f44285ef907abe81a303e",
+          "width": 160
+        }
+      ],
+      "name": "Jockstrap",
+      "popularity": 39,
+      "type": "artist",
+      "uri": "spotify:artist:6S3Z6Me30mtdm526H17v8k"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/23NIwARd4vPbxt3wwNnJ6k"
+      },
+      "followers": {
+        "href": null,
+        "total": 232802
+      },
+      "genres": [
+        "alternative rock",
+        "art pop",
+        "brooklyn indie",
+        "denton tx indie",
+        "freak folk",
+        "indie rock",
+        "modern alternative rock",
+        "modern rock",
+        "neo-psychedelic",
+        "noise pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/23NIwARd4vPbxt3wwNnJ6k",
+      "id": "23NIwARd4vPbxt3wwNnJ6k",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eba968b1bb3c46e65911d8bb8c",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174a968b1bb3c46e65911d8bb8c",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178a968b1bb3c46e65911d8bb8c",
+          "width": 160
+        }
+      ],
+      "name": "Parquet Courts",
+      "popularity": 59,
+      "type": "artist",
+      "uri": "spotify:artist:23NIwARd4vPbxt3wwNnJ6k"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5"
+      },
+      "followers": {
+        "href": null,
+        "total": 2477023
+      },
+      "genres": [
+        "art pop",
+        "candy pop",
+        "dance pop",
+        "electropop",
+        "hyperpop",
+        "metropopolis",
+        "pop",
+        "post-teen pop",
+        "uk pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/25uiPmTg16RbhZWAqwLBy5",
+      "id": "25uiPmTg16RbhZWAqwLBy5",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb576cb43281160e345f728b71",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174576cb43281160e345f728b71",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178576cb43281160e345f728b71",
+          "width": 160
+        }
+      ],
+      "name": "Charli XCX",
+      "popularity": 80,
+      "type": "artist",
+      "uri": "spotify:artist:25uiPmTg16RbhZWAqwLBy5"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6XYvaoDGE0VmRt83Jss9Sn"
+      },
+      "followers": {
+        "href": null,
+        "total": 715926
+      },
+      "genres": [
+        "australian indie",
+        "australian psych",
+        "double drumming",
+        "microtonal",
+        "neo-psychedelic"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6XYvaoDGE0VmRt83Jss9Sn",
+      "id": "6XYvaoDGE0VmRt83Jss9Sn",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebae21e90221e814c50033133a",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174ae21e90221e814c50033133a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178ae21e90221e814c50033133a",
+          "width": 160
+        }
+      ],
+      "name": "King Gizzard & The Lizard Wizard",
+      "popularity": 64,
+      "type": "artist",
+      "uri": "spotify:artist:6XYvaoDGE0VmRt83Jss9Sn"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0NB5HROxc8dDBXpkIi1v3d"
+      },
+      "followers": {
+        "href": null,
+        "total": 207480
+      },
+      "genres": [
+        "indie pop",
+        "indie r&b",
+        "modern alternative pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0NB5HROxc8dDBXpkIi1v3d",
+      "id": "0NB5HROxc8dDBXpkIi1v3d",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb931531098812a8b681af5977",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174931531098812a8b681af5977",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178931531098812a8b681af5977",
+          "width": 160
+        }
+      ],
+      "name": "Remi Wolf",
+      "popularity": 69,
+      "type": "artist",
+      "uri": "spotify:artist:0NB5HROxc8dDBXpkIi1v3d"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6aaMZ3fcfLv4tEbmY7bjRM"
+      },
+      "followers": {
+        "href": null,
+        "total": 1024705
+      },
+      "genres": [
+        "hip hop",
+        "rap",
+        "tennessee hip hop",
+        "underground hip hop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6aaMZ3fcfLv4tEbmY7bjRM",
+      "id": "6aaMZ3fcfLv4tEbmY7bjRM",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb1ff1685224034e6c12538722",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051741ff1685224034e6c12538722",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1781ff1685224034e6c12538722",
+          "width": 160
+        }
+      ],
+      "name": "Isaiah Rashad",
+      "popularity": 73,
+      "type": "artist",
+      "uri": "spotify:artist:6aaMZ3fcfLv4tEbmY7bjRM"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6g0mn3tzAds6aVeUYRsryU"
+      },
+      "followers": {
+        "href": null,
+        "total": 761300
+      },
+      "genres": [
+        "indie rock",
+        "philly indie"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6g0mn3tzAds6aVeUYRsryU",
+      "id": "6g0mn3tzAds6aVeUYRsryU",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb83f61af212a62cc7fcbc1ae7",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517483f61af212a62cc7fcbc1ae7",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17883f61af212a62cc7fcbc1ae7",
+          "width": 160
+        }
+      ],
+      "name": "The War On Drugs",
+      "popularity": 69,
+      "type": "artist",
+      "uri": "spotify:artist:6g0mn3tzAds6aVeUYRsryU"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3ztRX1UoIOsFqpD7dB6R8O"
+      },
+      "followers": {
+        "href": null,
+        "total": 36488
+      },
+      "genres": [
+        "art pop",
+        "bubblegrunge",
+        "freak folk",
+        "indie pop",
+        "indie punk",
+        "indie rock",
+        "small room"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3ztRX1UoIOsFqpD7dB6R8O",
+      "id": "3ztRX1UoIOsFqpD7dB6R8O",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebb64114aebf41517b0f17e466",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174b64114aebf41517b0f17e466",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178b64114aebf41517b0f17e466",
+          "width": 160
+        }
+      ],
+      "name": "illuminati hotties",
+      "popularity": 48,
+      "type": "artist",
+      "uri": "spotify:artist:3ztRX1UoIOsFqpD7dB6R8O"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/5VF0YkVLeVD4ytyiyVSIiF"
+      },
+      "followers": {
+        "href": null,
+        "total": 236034
+      },
+      "genres": [
+        "art pop",
+        "brooklyn indie",
+        "experimental pop",
+        "freak folk",
+        "indie pop",
+        "indie rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/5VF0YkVLeVD4ytyiyVSIiF",
+      "id": "5VF0YkVLeVD4ytyiyVSIiF",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebef25da450464164f5cd5158b",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174ef25da450464164f5cd5158b",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178ef25da450464164f5cd5158b",
+          "width": 160
+        }
+      ],
+      "name": "Dirty Projectors",
+      "popularity": 48,
+      "type": "artist",
+      "uri": "spotify:artist:5VF0YkVLeVD4ytyiyVSIiF"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4piFCokRN13muTud5Y2lhz"
+      },
+      "followers": {
+        "href": null,
+        "total": 118301
+      },
+      "genres": [
+        "bubblegrunge",
+        "indie surf"
+      ],
+      "href": "https://api.spotify.com/v1/artists/4piFCokRN13muTud5Y2lhz",
+      "id": "4piFCokRN13muTud5Y2lhz",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb2461d8be554306d4e912d789",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051742461d8be554306d4e912d789",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1782461d8be554306d4e912d789",
+          "width": 160
+        }
+      ],
+      "name": "Hinds",
+      "popularity": 44,
+      "type": "artist",
+      "uri": "spotify:artist:4piFCokRN13muTud5Y2lhz"
+    }
+  ],
+  "total": 50,
+  "limit": 10,
+  "offset": 0,
+  "href": "https://api.spotify.com/v1/me/top/artists?limit=10&offset=0&time_range=short_term",
+  "previous": null,
+  "next": "https://api.spotify.com/v1/me/top/artists?limit=10&offset=10&time_range=short_term"
+}

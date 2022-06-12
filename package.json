@@ -1,0 +1,31 @@
+{
+  "name": "lambdas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build.tsc": "tsc -p ./tsconfig.json && cp ./package.json ./dist",
+    "build.sam": "sam build",
+    "build": "npm run build.tsc && npm run build.sam",
+    "deploy": "sam deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/aws-lambda": "^8.10.83",
+    "@types/jsonwebtoken": "^8.5.6",
+    "@types/node": "^16.9.1",
+    "aws-sdk": "^2.987.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1"
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "ts": "3-11-2021",
+  "questions": [
+    {
+      "id": "F3PYBGN6LcgpFy1w",
+      "track": {
+        "id": "2RPbEp0DyBVlkRvvYKopO7",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273fbdec8696ff05ae19265dfa0",
+        "albumName": "The Sun's Tirade",
+        "releaseDate": "2016-09-02",
+        "artists": [
+          "Isaiah Rashad",
+          "Zacari",
+          "Kendrick Lamar"
+        ],
+        "name": "Wat's Wrong (feat. Zacari & Kendrick Lamar)",
+        "popularity": 67,
+        "previewUrl": "https://p.scdn.co/mp3-preview/a8a42c4e694bdeb14e6d0d379c134db3337e9d56?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+        "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+        "spotifyDisplayName": "Joe"
+      },
+      "choices": [
+        {
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyDisplayName": "Joe"
+        },
+        {
+          "spotifyDisplayName": "miss-hen",
+          "spotifyId": "miss-hen"
+        }
+      ]
+    },
+    {
+      "id": "YTSDo6Ci1fHZTrsH",
+      "track": {
+        "id": "01K4zKU104LyJ8gMb7227B",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273318443aab3531a0558e79a4d",
+        "albumName": "Red (Taylor's Version)",
+        "releaseDate": "2021-11-12",
+        "artists": [
+          "Taylor Swift",
+          "Phoebe Bridgers"
+        ],
+        "name": "Nothing New (feat. Phoebe Bridgers) (Taylor’s Version) (From The Vault)",
+        "popularity": 86,
+        "previewUrl": "https://p.scdn.co/mp3-preview/de2618f2616241be00579b979a8d4c1b45acdd8a?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "miss-hen",
+        "spotifyDisplayName": "miss-hen"
+      },
+      "choices": [
+        {
+          "spotifyDisplayName": "Joe",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+        },
+        {
+          "spotifyId": "miss-hen",
+          "spotifyDisplayName": "miss-hen"
+        }
+      ]
+    },
+    {
+      "id": "DvaZKL3sBdyR8inS",
+      "track": {
+        "id": "5enxwA8aAbwZbf5qCHORXi",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273318443aab3531a0558e79a4d",
+        "albumName": "Red (Taylor's Version)",
+        "releaseDate": "2021-11-12",
+        "artists": [
+          "Taylor Swift"
+        ],
+        "name": "All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)",
+        "popularity": 95,
+        "previewUrl": "https://p.scdn.co/mp3-preview/eecf29094ce6afe6ecc131d2b99f7cc2fb26c7b9?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "miss-hen",
+        "spotifyDisplayName": "miss-hen"
+      },
+      "choices": [
+        {
+          "spotifyDisplayName": "Joe",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+        },
+        {
+          "spotifyId": "miss-hen",
+          "spotifyDisplayName": "miss-hen"
+        }
+      ]
+    },
+    {
+      "id": "5m0YObTIpkRXZkGW",
+      "track": {
+        "id": "3Kkjo3cT83cw09VJyrLNwX",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7",
+        "albumName": "30",
+        "releaseDate": "2021-11-19",
+        "artists": [
+          "Adele"
+        ],
+        "name": "Oh My God",
+        "popularity": 93,
+        "previewUrl": "https://p.scdn.co/mp3-preview/c37959aa69d5ff67815e8748451b32b6c81d84a8?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "miss-hen",
+        "spotifyDisplayName": "miss-hen"
+      },
+      "choices": [
+        {
+          "spotifyId": "miss-hen",
+          "spotifyDisplayName": "miss-hen"
+        },
+        {
+          "spotifyDisplayName": "Joe",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+        }
+      ]
+    },
+    {
+      "id": "EpnYDm6zhmVxw2Uc",
+      "track": {
+        "id": "4VhvGhj8pdAqFJBuAfUW38",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273e5cc34c45a829e0dad096157",
+        "albumName": "I Don’t Live Here Anymore",
+        "releaseDate": "2021-10-29",
+        "artists": [
+          "The War On Drugs"
+        ],
+        "name": "Living Proof",
+        "popularity": 64,
+        "previewUrl": "https://p.scdn.co/mp3-preview/e2c80fd57f6056fe4abed5dd69d996cc66ac456b?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+        "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+        "spotifyDisplayName": "Joe"
+      },
+      "choices": [
+        {
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyDisplayName": "Joe"
+        },
+        {
+          "spotifyDisplayName": "miss-hen",
+          "spotifyId": "miss-hen"
+        }
+      ]
+    },
+    {
+      "id": "POiLyXmYfKE3WYvc",
+      "track": {
+        "id": "7mCQQZ6YF8DyLUAqcBDKjI",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b27333da95992aa82236e21263c2",
+        "albumName": "Wicked City",
+        "releaseDate": "2020-06-19",
+        "artists": [
+          "Jockstrap"
+        ],
+        "name": "Acid",
+        "popularity": 31,
+        "previewUrl": "https://p.scdn.co/mp3-preview/2255e6ed6934f8516d3fa80cb86fe4734f3b7b2d?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+        "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+        "spotifyDisplayName": "Joe"
+      },
+      "choices": [
+        {
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyDisplayName": "Joe"
+        },
+        {
+          "spotifyDisplayName": "miss-hen",
+          "spotifyId": "miss-hen"
+        }
+      ]
+    },
+    {
+      "id": "V8LfXzhyaPw9G3tH",
+      "track": {
+        "id": "0gfJD5Uhx82OhbgVmUMPmH",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b27333da95992aa82236e21263c2",
+        "albumName": "Wicked City",
+        "releaseDate": "2020-06-19",
+        "artists": [
+          "Jockstrap"
+        ],
+        "name": "City Hell",
+        "popularity": 40,
+        "previewUrl": "https://p.scdn.co/mp3-preview/b109e733337ee77e573e824d8aa51781368c3acb?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+        "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+        "spotifyDisplayName": "Joe"
+      },
+      "choices": [
+        {
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyDisplayName": "Joe"
+        },
+        {
+          "spotifyDisplayName": "miss-hen",
+          "spotifyId": "miss-hen"
+        }
+      ]
+    },
+    {
+      "id": "tDiYvL3IhanC6FWr",
+      "track": {
+        "id": "2JvWoj5bTklsb6fPzRfZ3x",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273adf0ad39a8ba7c2b2cacc304",
+        "albumName": "New Shapes (feat. Christine and the Queens and Caroline Polachek)",
+        "releaseDate": "2021-11-04",
+        "artists": [
+          "Charli XCX",
+          "Christine and the Queens",
+          "Caroline Polachek"
+        ],
+        "name": "New Shapes (feat. Christine and the Queens and Caroline Polachek)",
+        "popularity": 72,
+        "previewUrl": "https://p.scdn.co/mp3-preview/ed5074f96164207a5660cf7e8515a428bd6a6c97?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+        "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+        "spotifyDisplayName": "Joe"
+      },
+      "choices": [
+        {
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyDisplayName": "Joe"
+        },
+        {
+          "spotifyDisplayName": "miss-hen",
+          "spotifyId": "miss-hen"
+        }
+      ]
+    },
+    {
+      "id": "RzIHPDPWGmFWmMkB",
+      "track": {
+        "id": "2j3GxEsbNYNeEzz86wDY4J",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7",
+        "albumName": "30",
+        "releaseDate": "2021-11-19",
+        "artists": [
+          "Adele"
+        ],
+        "name": "Love Is A Game",
+        "popularity": 84,
+        "previewUrl": "https://p.scdn.co/mp3-preview/ad64a2e94967a205bdd4d9df6695af619fc5ed93?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "miss-hen",
+        "spotifyDisplayName": "miss-hen"
+      },
+      "choices": [
+        {
+          "spotifyDisplayName": "Joe",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+        },
+        {
+          "spotifyId": "miss-hen",
+          "spotifyDisplayName": "miss-hen"
+        }
+      ]
+    },
+    {
+      "id": "ypgFwkOWn5JYuspw",
+      "track": {
+        "id": "13CVSGLSFl4UxpDVR6u3dq",
+        "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7",
+        "albumName": "30",
+        "releaseDate": "2021-11-19",
+        "artists": [
+          "Adele"
+        ],
+        "name": "Strangers By Nature",
+        "popularity": 87,
+        "previewUrl": "https://p.scdn.co/mp3-preview/6a4c8a7cccf121cfee1dfe71a37723b5970a76fc?cid=678f8fa942f640deaad0fa4f8005c98d"
+      },
+      "answer": {
+        "spotifyId": "miss-hen",
+        "spotifyDisplayName": "miss-hen"
+      },
+      "choices": [
+        {
+          "spotifyDisplayName": "Joe",
+          "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+          "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+        },
+        {
+          "spotifyId": "miss-hen",
+          "spotifyDisplayName": "miss-hen"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+      "answers": [
+        {
+          "id": "F3PYBGN6LcgpFy1w",
+          "track": {
+            "id": "2RPbEp0DyBVlkRvvYKopO7",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273fbdec8696ff05ae19265dfa0",
+            "albumName": "The Sun's Tirade",
+            "releaseDate": "2016-09-02",
+            "artists": [
+              "Isaiah Rashad",
+              "Zacari",
+              "Kendrick Lamar"
+            ],
+            "name": "Wat's Wrong (feat. Zacari & Kendrick Lamar)",
+            "popularity": 67,
+            "previewUrl": "https://p.scdn.co/mp3-preview/a8a42c4e694bdeb14e6d0d379c134db3337e9d56?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyDisplayName": "Joe"
+            },
+            {
+              "spotifyDisplayName": "miss-hen",
+              "spotifyId": "miss-hen"
+            }
+          ],
+          "answer": {
+            "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+            "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+            "spotifyDisplayName": "Joe"
+          }
+        },
+        {
+          "id": "YTSDo6Ci1fHZTrsH",
+          "track": {
+            "id": "01K4zKU104LyJ8gMb7227B",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273318443aab3531a0558e79a4d",
+            "albumName": "Red (Taylor's Version)",
+            "releaseDate": "2021-11-12",
+            "artists": [
+              "Taylor Swift",
+              "Phoebe Bridgers"
+            ],
+            "name": "Nothing New (feat. Phoebe Bridgers) (Taylor’s Version) (From The Vault)",
+            "popularity": 86,
+            "previewUrl": "https://p.scdn.co/mp3-preview/de2618f2616241be00579b979a8d4c1b45acdd8a?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyDisplayName": "Joe",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+            },
+            {
+              "spotifyId": "miss-hen",
+              "spotifyDisplayName": "miss-hen"
+            }
+          ],
+          "answer": {
+            "spotifyDisplayName": "Joe",
+            "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+            "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+          }
+        },
+        {
+          "id": "DvaZKL3sBdyR8inS",
+          "track": {
+            "id": "5enxwA8aAbwZbf5qCHORXi",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273318443aab3531a0558e79a4d",
+            "albumName": "Red (Taylor's Version)",
+            "releaseDate": "2021-11-12",
+            "artists": [
+              "Taylor Swift"
+            ],
+            "name": "All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)",
+            "popularity": 95,
+            "previewUrl": "https://p.scdn.co/mp3-preview/eecf29094ce6afe6ecc131d2b99f7cc2fb26c7b9?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyDisplayName": "Joe",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+            },
+            {
+              "spotifyId": "miss-hen",
+              "spotifyDisplayName": "miss-hen"
+            }
+          ],
+          "answer": {
+            "spotifyDisplayName": "Joe",
+            "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+            "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+          }
+        },
+        {
+          "id": "5m0YObTIpkRXZkGW",
+          "track": {
+            "id": "3Kkjo3cT83cw09VJyrLNwX",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7",
+            "albumName": "30",
+            "releaseDate": "2021-11-19",
+            "artists": [
+              "Adele"
+            ],
+            "name": "Oh My God",
+            "popularity": 93,
+            "previewUrl": "https://p.scdn.co/mp3-preview/c37959aa69d5ff67815e8748451b32b6c81d84a8?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyId": "miss-hen",
+              "spotifyDisplayName": "miss-hen"
+            },
+            {
+              "spotifyDisplayName": "Joe",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+            }
+          ],
+          "answer": {
+            "spotifyId": "miss-hen",
+            "spotifyDisplayName": "miss-hen"
+          }
+        },
+        {
+          "id": "EpnYDm6zhmVxw2Uc",
+          "track": {
+            "id": "4VhvGhj8pdAqFJBuAfUW38",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273e5cc34c45a829e0dad096157",
+            "albumName": "I Don’t Live Here Anymore",
+            "releaseDate": "2021-10-29",
+            "artists": [
+              "The War On Drugs"
+            ],
+            "name": "Living Proof",
+            "popularity": 64,
+            "previewUrl": "https://p.scdn.co/mp3-preview/e2c80fd57f6056fe4abed5dd69d996cc66ac456b?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyDisplayName": "Joe"
+            },
+            {
+              "spotifyDisplayName": "miss-hen",
+              "spotifyId": "miss-hen"
+            }
+          ],
+          "answer": {
+            "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+            "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+            "spotifyDisplayName": "Joe"
+          }
+        },
+        {
+          "id": "POiLyXmYfKE3WYvc",
+          "track": {
+            "id": "7mCQQZ6YF8DyLUAqcBDKjI",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b27333da95992aa82236e21263c2",
+            "albumName": "Wicked City",
+            "releaseDate": "2020-06-19",
+            "artists": [
+              "Jockstrap"
+            ],
+            "name": "Acid",
+            "popularity": 31,
+            "previewUrl": "https://p.scdn.co/mp3-preview/2255e6ed6934f8516d3fa80cb86fe4734f3b7b2d?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyDisplayName": "Joe"
+            },
+            {
+              "spotifyDisplayName": "miss-hen",
+              "spotifyId": "miss-hen"
+            }
+          ],
+          "answer": {
+            "spotifyDisplayName": "miss-hen",
+            "spotifyId": "miss-hen"
+          }
+        },
+        {
+          "id": "V8LfXzhyaPw9G3tH",
+          "track": {
+            "id": "0gfJD5Uhx82OhbgVmUMPmH",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b27333da95992aa82236e21263c2",
+            "albumName": "Wicked City",
+            "releaseDate": "2020-06-19",
+            "artists": [
+              "Jockstrap"
+            ],
+            "name": "City Hell",
+            "popularity": 40,
+            "previewUrl": "https://p.scdn.co/mp3-preview/b109e733337ee77e573e824d8aa51781368c3acb?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyDisplayName": "Joe"
+            },
+            {
+              "spotifyDisplayName": "miss-hen",
+              "spotifyId": "miss-hen"
+            }
+          ],
+          "answer": {
+            "spotifyDisplayName": "miss-hen",
+            "spotifyId": "miss-hen"
+          }
+        },
+        {
+          "id": "tDiYvL3IhanC6FWr",
+          "track": {
+            "id": "2JvWoj5bTklsb6fPzRfZ3x",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273adf0ad39a8ba7c2b2cacc304",
+            "albumName": "New Shapes (feat. Christine and the Queens and Caroline Polachek)",
+            "releaseDate": "2021-11-04",
+            "artists": [
+              "Charli XCX",
+              "Christine and the Queens",
+              "Caroline Polachek"
+            ],
+            "name": "New Shapes (feat. Christine and the Queens and Caroline Polachek)",
+            "popularity": 72,
+            "previewUrl": "https://p.scdn.co/mp3-preview/ed5074f96164207a5660cf7e8515a428bd6a6c97?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyDisplayName": "Joe"
+            },
+            {
+              "spotifyDisplayName": "miss-hen",
+              "spotifyId": "miss-hen"
+            }
+          ],
+          "answer": {
+            "spotifyDisplayName": "miss-hen",
+            "spotifyId": "miss-hen"
+          }
+        },
+        {
+          "id": "RzIHPDPWGmFWmMkB",
+          "track": {
+            "id": "2j3GxEsbNYNeEzz86wDY4J",
+            "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7",
+            "albumName": "30",
+            "releaseDate": "2021-11-19",
+            "artists": [
+              "Adele"
+            ],
+            "name": "Love Is A Game",
+            "popularity": 84,
+            "previewUrl": "https://p.scdn.co/mp3-preview/ad64a2e94967a205bdd4d9df6695af619fc5ed93?cid=678f8fa942f640deaad0fa4f8005c98d"
+          },
+          "choices": [
+            {
+              "spotifyDisplayName": "Joe",
+              "spotifyDisplayPicture": "https://scontent.fcjb7-1.fna.fbcdn.net/v/t1.6435-1/p320x320/69664747_2757699960920765_65935126747414528_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=WT8lma9fJmAAX_WiEoC&_nc_ht=scontent.fcjb7-1.fna&edm=AP4hL3IEAAAA&oh=be4d8c0a816fd01250775ca6a2ccf9e7&oe=61C4BB34",
+              "spotifyId": "xnmacgqaaa6a1xi7uy2k1fe7w"
+            },
+            {
+              "spotifyId": "miss-hen",
+              "spotifyDisplayName": "miss-hen"
+            }
+          ],
+          "answer": {
+            "spotifyId": "miss-hen",
+            "spotifyDisplayName": "miss-hen"
+          }
+        }
+      ],
+      "score": 4
+    }
+  ]
+}
