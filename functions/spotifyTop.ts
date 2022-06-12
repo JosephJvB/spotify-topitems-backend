@@ -74,7 +74,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
       case SpotifyItemType.tracks:
         items = (responseItems as ISpotifyTrack[])
         break
-        case SpotifyItemType.artists:
+      case SpotifyItemType.artists:
         items = (responseItems as ISpotifyArtist[])
         break
     }
