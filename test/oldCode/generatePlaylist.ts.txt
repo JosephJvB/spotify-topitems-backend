@@ -1,0 +1,55 @@
+import { S3Event } from "aws-lambda";
+import DocClient from "../clients/docClient";
+import S3Client from "../clients/s3Client";
+import SpotifyClient from "../clients/spotifyClient";
+import { ISpotifyProfile } from "../models/ddb";
+import { IQuiz } from "../models/quiz";
+import { jvbSpotifyId } from "../models/spotifyApi";
+
+const s3Client = new S3Client()
+const spotifyClient = new SpotifyClient()
+const ddbClient = new DocClient()
+
+export const handler = async (event: S3Event) => {
+  try {
+    console.log('generatePlaylist: invoked')
+    const keys = event.Records.map(r => r.s3.object.key)
+    console.log('object keys:', event.Records.map(r => r.s3.object.key))
+    // should only ever be current.json
+    if (!keys.includes(s3Client.quizFile)) {
+      console.error('Event has not updated', s3Client.quizFile, 'exiting.')
+      return
+    }
+    const [
+      quizFileStr,
+      jvbProfile
+     ]: [
+       string,
+       ISpotifyProfile
+    ] = await Promise.all([
+      s3Client.getObject(s3Client.bucket, s3Client.quizFile),
+      ddbClient.getSpotifyProfile(jvbSpotifyId)
+    ])
+    const quizFile: IQuiz = JSON.parse(quizFileStr)
+    const names = {}
+    quizFile.questions.forEach(q => {
+      names[q.answer.spotifyDisplayName] = true
+    })
+    const description = `Exquisite collaborative music from ${Object.keys(names).join(', ')}`
+    const playlistName = `JAF quiz [${quizFile.ts}]`
+    const playlist = await spotifyClient.createPlaylist(
+      jvbProfile,
+      playlistName,
+      description
+    )
+    await spotifyClient.addPlaylistTracks(playlist.id, quizFile.questions.map(q => q.track.uri))
+    await ddbClient.putPlaylist({
+      playlistId: playlist.id,
+      playlistUrl: playlist.href
+    })
+    console.log('generatePlaylist: success')
+  } catch (e) {
+    console.error(e)
+    console.error('generatePlaylist: failed')
+  }
+}
