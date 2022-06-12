@@ -5,10 +5,8 @@ import SpotifyClient from '../clients/spotifyClient'
 import { HttpMethod, IRegisterRequest } from '../models/requests'
 import { HttpFailure, HttpSuccess, IProfileResponse, ITopItemsResponse } from '../models/responses'
 import { ISpotifyJson, ISpotifyProfile, IUser } from '../models/ddb'
-import Track, { ISpotifyTrack } from '../models/track'
-import Artist, { ISpotifyArtist } from '../models/artist'
 import { URLSearchParams } from 'url'
-import { SpotifyItemType, SpotifyTopRange } from '../models/spotifyApi'
+import { ISpotifyArtist, ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from '../models/spotifyApi'
 
 const authClient = new AuthClient()
 const docClient = new DocClient()
@@ -71,13 +69,13 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
     }
 
 
-    let items: Track[] | Artist[] = []
+    let items: ISpotifyTrack[] | ISpotifyArtist[] = []
     switch (type) {
       case SpotifyItemType.tracks:
-        items = (responseItems as ISpotifyTrack[]).map(ri => new Track(ri))
+        items = (responseItems as ISpotifyTrack[])
         break
         case SpotifyItemType.artists:
-        items = (responseItems as ISpotifyArtist[]).map(ri => new Artist(ri))
+        items = (responseItems as ISpotifyArtist[])
         break
     }
 

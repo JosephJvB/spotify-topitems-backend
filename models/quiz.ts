@@ -1,4 +1,4 @@
-import Track from "./track";
+import { ISpotifyTrack } from "./spotifyApi"
 
 export interface IQuiz {
   ts: string
@@ -7,7 +7,7 @@ export interface IQuiz {
 }
 export interface IQuestion {
   id: string
-  track: Track
+  track: ISpotifyTrack
   choices: IQuizProfile[]
   answer: IQuizProfile
 }

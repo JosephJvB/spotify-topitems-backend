@@ -3,8 +3,7 @@ import S3Client from '../clients/s3Client'
 import SpotifyClient from '../clients/spotifyClient'
 import { ISpotifyJson, ISpotifyProfile } from '../models/ddb'
 import { IQuiz, IQuizProfile } from '../models/quiz'
-import { SpotifyItemType, SpotifyTopRange } from '../models/spotifyApi'
-import Track, { ISpotifyTrack } from '../models/track'
+import { ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from '../models/spotifyApi'
 
 const s3Client = new S3Client()
 const docClient = new DocClient()
@@ -17,7 +16,7 @@ const newQuiz: IQuiz = {
 }
 
 interface ISpotifyProfileWithTracks extends ISpotifyProfile {
-  tracks: Track[]
+  tracks: ISpotifyTrack[]
 }
 
 // TODO: Refactor, logic written under time crunch
@@ -57,7 +56,7 @@ export const handler = async (): Promise<void> => {
       )
       profilesWithTracks.push({
         ...profile,
-        tracks: (tracks as ISpotifyTrack[]).map(t => new Track(t))
+        tracks: tracks as ISpotifyTrack[]
       })
     }
 
@@ -66,7 +65,7 @@ export const handler = async (): Promise<void> => {
     console.log('>  creating quiz with', questionCount, 'questions')
     // for each spotifyProfile TRY to find a song that hasn't been an answer for that user before
     // and make sure that song is not already in the quiz from any user (incl. self)
-    const inPastQuizzes = (p: ISpotifyProfileWithTracks, t: Track) => {
+    const inPastQuizzes = (p: ISpotifyProfileWithTracks, t: ISpotifyTrack) => {
       return pastQuizzes.find(q => q.questions.find(ques => {
         return p.spotifyId == ques.answer.spotifyId
           && t.id == ques.track.id

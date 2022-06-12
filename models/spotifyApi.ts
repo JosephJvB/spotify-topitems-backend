@@ -1,6 +1,3 @@
-import { ISpotifyArtist } from "./artist";
-import { ISpotifyTrack } from "./track";
-
 export interface ISpotifyTokenResponse {
   access_token: string
   token_type: string
@@ -83,4 +80,45 @@ export interface ISpotifyImage {
   height?: number
   url: string
   width?: number
+}
+export interface ISpotifyArtist {
+  external_urls: {
+    spotify: string
+    [key: string]: string
+  }
+  followers: {
+    href: string
+    total: number
+  }
+  genres: string[]
+  href: string
+  id: string
+  images: ISpotifyImage[]
+  name: string
+  popularity: number
+  type: string
+  uri: string
+}
+
+export interface ISpotifyTrack {
+  album: ISpotifyAlbum
+  artists: ISpotifyArtistTrim[]
+  available_markets: string[]
+  disc_number: number
+  duration_ms: number
+  explicit: boolean
+  external_ids: { [key: string]: string }
+  external_urls: {
+    spotify: string
+    [key: string]: string
+  }
+  href: string
+  id: string
+  is_local: boolean
+  name: string
+  popularity: number
+  preview_url: string
+  track_number: number
+  type: string
+  uri: string
 }

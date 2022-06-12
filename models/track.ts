@@ -22,25 +22,3 @@ export interface ISpotifyTrack {
   type: string
   uri: string
 }
-
-export default class Track {
-  id: string
-  albumImageUrl: string
-  albumName: string
-  releaseDate: string
-  artists: string[]
-  name: string
-  popularity: number
-  previewUrl: string
-  constructor(data: ISpotifyTrack) {
-    this.id = data.id
-    const albumImage = data.album.images.find(i => !!i.url)
-    this.albumImageUrl = albumImage && albumImage.url
-    this.albumName = data.album.name
-    this.releaseDate = data.album.release_date
-    this.artists = data.artists.map(a => a.name)
-    this.name = data.name
-    this.popularity = data.popularity
-    this.previewUrl = data.preview_url
-  }
-}

@@ -1,8 +1,15 @@
 import axios, { AxiosRequestHeaders, AxiosResponse } from 'axios'
-import { ISpotifyMeResponse, ISpotifyRefreshResponse, ISpotifyTopArtistsResponse, SpotifyTopRange, ISpotifyTopTracksResponse, SpotifyItemType } from '../models/spotifyApi'
+import {
+  ISpotifyMeResponse,
+  ISpotifyRefreshResponse,
+  ISpotifyTopArtistsResponse,
+  SpotifyTopRange,
+  ISpotifyTopTracksResponse,
+  SpotifyItemType,
+  ISpotifyTrack,
+  ISpotifyArtist
+} from '../models/spotifyApi'
 import { ISpotifyJson } from '../models/ddb'
-import { ISpotifyTrack } from '../models/track'
-import { ISpotifyArtist } from '../models/artist'
 
 export default class SpotifyClient {
   headers: AxiosRequestHeaders

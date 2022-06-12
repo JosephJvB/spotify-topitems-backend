@@ -1,7 +1,6 @@
 import { APIGatewayProxyResult } from "aws-lambda"
-import Artist from "./artist"
 import { IQuiz } from "./quiz"
-import Track from "./track"
+import { ISpotifyArtist, ISpotifyTrack } from "./spotifyApi"
 
 export interface ICorsHeaders {
   "Content-Type": string
@@ -54,13 +53,13 @@ export interface IProfileResponse {
   spotifyId: string
   displayName?: string
   displayPicture?: string
-  topTracks?: Track[]
-  topArtists?: Artist[]
+  topTracks?: ISpotifyTrack[]
+  topArtists?: ISpotifyArtist[]
 }
 export interface ITopItemsResponse {
   message?: string
   token: string
-  items: (Track | Artist)[]
+  items: (ISpotifyTrack | ISpotifyArtist)[]
 }
 export interface IQuizResponse {
   message?: string
