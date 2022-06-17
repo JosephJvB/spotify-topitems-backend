@@ -29,7 +29,7 @@ export abstract class HttpResponse implements APIGatewayProxyResult {
     this.headers = {...CorsHeaders, ...headers}
   }
 }
-export class HttpSuccess<T> extends HttpResponse {
+export class HttpSuccess<T extends IBasicResponse> extends HttpResponse {
 constructor(data: T) {
     super(200, data && JSON.stringify(data))
   }
@@ -46,9 +46,11 @@ export class HttpRedirect extends HttpResponse {
   }
 }
 
-export interface IProfileResponse {
+export interface IBasicResponse {
   message?: string
   token: string
+}
+export interface IProfileResponse extends IBasicResponse {
   email: string
   spotifyId: string
   displayName?: string
@@ -56,14 +58,10 @@ export interface IProfileResponse {
   topTracks?: ISpotifyTrack[]
   topArtists?: ISpotifyArtist[]
 }
-export interface ITopItemsResponse {
-  message?: string
-  token: string
+export interface ITopItemsResponse extends IBasicResponse {
   items: (ISpotifyTrack | ISpotifyArtist)[]
 }
-export interface IQuizResponse {
-  message?: string
-  token: string
+export interface IQuizResponse extends IBasicResponse {
   quiz: IQuiz
   answered: boolean
 }
