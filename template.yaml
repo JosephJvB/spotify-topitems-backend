@@ -68,7 +68,7 @@ Resources:
         AllowHeaders: "*"
         AllowMethods: "*"
         AllowOrigin: "*"
-        Domain:
+      Domain:
         DomainName: ts.jaf-unwrapped.com
         CertificateArn: arn:aws:acm:ap-southeast-2:355151872526:certificate/12c34da1-c039-4fc4-9636-05571fdb3df9
         Route53:
