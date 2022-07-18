@@ -65,3 +65,6 @@ export interface IQuizResponse extends IBasicResponse {
   quiz: IQuiz
   answered: boolean
 }
+export interface IWebsocketResponse extends IBasicResponse {
+  
+}

@@ -21,3 +21,8 @@ I should probably split these into different folders for different deploys
 
 Do guess x4 people for x1 song
 Allow song preview to play
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-route.html#cfn-apigatewayv2-route-target
+https://github.com/aws-samples/serverless-patterns
+https://aws.amazon.com/blogs/compute/building-serverless-multi-region-websocket-apis/
+https://github.com/aws-samples/multi-region-websocket-api/blob/main/src/lambda/websocket-response-handler.ts

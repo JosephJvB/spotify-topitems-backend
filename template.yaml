@@ -24,12 +24,6 @@ Parameters:
     Default: '{{resolve:ssm:JafSpotifySecret:1}}'
     AllowedValues:
       - '{{resolve:ssm:JafSpotifySecret:1}}'
-  # will update this as required
-  SpotifyRedirectUri:
-    Type: String
-    Default: https://daswxepyym8y0.cloudfront.net
-    AllowedValues:
-      - https://daswxepyym8y0.cloudfront.net
 
 Globals:
   Function:
@@ -42,7 +36,6 @@ Globals:
         JwtSecret: !Ref JwtSecret
         SpotifyClientId: !Ref SpotifyClientId
         SpotifyClientSecret: !Ref SpotifyClientSecret
-        SpotifyRedirectUri: !Ref SpotifyRedirectUri
 
 Resources:
   SpotifyProfileTable:
@@ -96,6 +89,87 @@ Resources:
             Method: options
             RestApiId: !Ref HttpApiGateway
 
+  WebSocketApiGateway:
+    Type: AWS::ApiGatewayV2::Api
+    Properties:
+      Name: jaf-spotify-WebSocketApiGateway
+      Description: An Amazon API Gateway WebSocket API and an AWS Lambda function.
+      ProtocolType: WEBSOCKET
+      RouteSelectionExpression: $request.path
+      # Domain:
+      #   Route53:
+      #     HostedZoneId: Z05897963LYPVXX455E44 how do I put this in WebSocketDomain
+  WebSocketDomainName:
+    Type: AWS::ApiGatewayV2::DomainName
+    Properties:
+      DomainName: ts-ws.jaf-unwrapped.com
+      DomainNameConfiguration:
+        - CertificateArn: arn:aws:acm:ap-southeast-2:355151872526:certificate/12c34da1-c039-4fc4-9636-05571fdb3df9
+  WebSocketRoute53RecordSet:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      Name: ts-ws.jaf-unwrapped.com
+      Type: A
+      HostedZoneId: Z05897963LYPVXX455E44
+      AliasTarget:
+        EvaluateTargetHealth: false
+        DNSName: !GetAtt WebSocketApiGateway.DistributionDomainName
+        HostedZoneId: !GetAtt WebSocketApiGateway.DistributionHostedZoneId
+  WSConnectionIntegration:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId: !Ref WebSocketApiGateway
+      IntegrationType: AWS_PROXY
+      IntegrationUri: !Sub arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${WSConnectionFunction}/invocations
+  WSConnectionIntegration:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId: !Ref WebSocketApiGateway
+      IntegrationType: AWS_PROXY
+      IntegrationUri: !Sub arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${WSConnectionFunction}/invocations
+  WSConnectRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref WebSocketApiGateway
+      RouteKey: $connect
+      AuthorizationType: NONE
+      OperationName: WSConnectRoute
+      Target: !Join
+        - '/'
+        - - 'integrations'
+          - !Ref WSConnectionIntegration
+  WSDisconnectRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref WebSocketApiGateway
+      RouteKey: $disconnect
+      AuthorizationType: NONE
+      OperationName: WSDisconnectRoute
+      Target: !Join
+        - '/'
+        - - 'integrations'
+          - !Ref WSConnectionIntegration
+  WSDisconnectRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref WebSocketApiGateway
+      RouteKey: $disconnect
+      AuthorizationType: NONE
+      OperationName: WSDisconnectRoute
+      Target: !Join
+        - '/'
+        - - 'integrations'
+          - !Ref WSConnectionIntegration
+
+  WSConnectionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./dist
+      Handler: functions/websocketConnection.handler
+      # Policies:
+        # - DynamoDBCrudPolicy:
+        #     TableName: !Ref SpotifyProfileTable
+
 Outputs:
   SpotifyProfileTable:
     Description: Store spotify records in nosql
@@ -106,3 +180,9 @@ Outputs:
   SpotifyTopFunction:
     Description: Get spotify top items
     Value: !Ref SpotifyTopFunction
+  WebSocketApiGateway:
+    Description: Websocket API between front end requests and backend lambda
+    Value: !Ref WebSocketApiGateway
+  WSConnectFunction:
+    Description: handle WS connect
+    Value: !Ref WSConnectFunction
