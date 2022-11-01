@@ -1,6 +1,6 @@
 import { APIGatewayProxyResult } from "aws-lambda"
+import { ISpotifyArtist, ISpotifyTrack } from "jvb-spotty-models"
 import { IQuiz } from "./quiz"
-import { ISpotifyArtist, ISpotifyTrack } from "./spotifyApi"
 
 export interface ICorsHeaders {
   "Content-Type": string

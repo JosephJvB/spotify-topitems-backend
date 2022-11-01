@@ -2,11 +2,11 @@ import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda'
 import AuthClient from '../clients/authClient'
 import DocClient from '../clients/docClient'
 import SpotifyClient from '../clients/spotifyClient'
-import { HttpMethod, IRegisterRequest } from '../models/requests'
-import { HttpFailure, HttpSuccess, IProfileResponse, ITopItemsResponse } from '../models/responses'
-import { ISpotifyJson, ISpotifyProfile, IUser } from '../models/ddb'
+import { HttpMethod } from '../models/requests'
+import { HttpFailure, HttpSuccess, ITopItemsResponse } from '../models/responses'
+import { ISpotifyJson } from '../models/ddb'
 import { URLSearchParams } from 'url'
-import { ISpotifyArtist, ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from '../models/spotifyApi'
+import { ISpotifyArtist, ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from 'jvb-spotty-models'
 
 const authClient = new AuthClient()
 const docClient = new DocClient()

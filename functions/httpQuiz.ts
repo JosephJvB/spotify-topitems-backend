@@ -43,7 +43,10 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
       const lambda = new LamdbaClient()
       await lambda.invoke(process.env.GenerateQuizFnName)
       console.log('Generate quiz success')
-      return new HttpSuccess('Generate quiz success')
+      return new HttpSuccess({
+        token: '',
+        message: 'Generate quiz success'
+      })
     }
 
     // race condition if users submit at the same time,

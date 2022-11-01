@@ -1,9 +1,9 @@
+import { ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from 'jvb-spotty-models'
 import DocClient from '../clients/docClient'
 import S3Client from '../clients/s3Client'
 import SpotifyClient from '../clients/spotifyClient'
 import { ISpotifyJson, ISpotifyProfile } from '../models/ddb'
 import { IQuiz, IQuizProfile } from '../models/quiz'
-import { ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from '../models/spotifyApi'
 
 const s3Client = new S3Client()
 const docClient = new DocClient()

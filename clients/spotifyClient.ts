@@ -1,15 +1,6 @@
 import axios, { AxiosRequestHeaders, AxiosResponse } from 'axios'
-import {
-  ISpotifyMeResponse,
-  ISpotifyRefreshResponse,
-  ISpotifyTopArtistsResponse,
-  SpotifyTopRange,
-  ISpotifyTopTracksResponse,
-  SpotifyItemType,
-  ISpotifyTrack,
-  ISpotifyArtist
-} from '../models/spotifyApi'
 import { ISpotifyJson } from '../models/ddb'
+import { ISpotifyArtist, ISpotifyPaginatedResponse, ISpotifyProfile, ISpotifyRefreshResponse, ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from 'jvb-spotty-models'
 
 export default class SpotifyClient {
   headers: AxiosRequestHeaders
@@ -38,10 +29,10 @@ export default class SpotifyClient {
     return r.data
   }
   
-  async getProfile(spotifyJson: ISpotifyJson): Promise<ISpotifyMeResponse> {
+  async getProfile(spotifyJson: ISpotifyJson): Promise<ISpotifyProfile> {
     await this.validateToken(spotifyJson)
     console.log('SpotifyClient.getProfile')
-    const r: AxiosResponse<ISpotifyMeResponse> = await axios({
+    const r: AxiosResponse<ISpotifyProfile> = await axios({
       url: 'https://api.spotify.com/v1/me',
       headers: {
         Authorization: 'Bearer ' + spotifyJson.access_token
@@ -57,7 +48,7 @@ export default class SpotifyClient {
     limit: number): Promise<ISpotifyTrack[] | ISpotifyArtist[]> {
       await this.validateToken(spotifyJson)
       console.log('SpotifyClient.getTopItems:', itemType)
-      const r: AxiosResponse<ISpotifyTopArtistsResponse | ISpotifyTopTracksResponse> = await axios({
+      const r: AxiosResponse<ISpotifyPaginatedResponse<ISpotifyArtist | ISpotifyTrack>> = await axios({
         url: `https://api.spotify.com/v1/me/top/${itemType}`,
         params: {
           limit: limit || 10,
@@ -68,7 +59,7 @@ export default class SpotifyClient {
           Authorization: 'Bearer ' + spotifyJson.access_token
         }
       })
-      return r.data.items
+      return r.data.items as ISpotifyArtist[] | ISpotifyTrack[]
   }
 
   // actually, if i refresh token, I need to save it back to spotifyProfile DDB with new timestamp

@@ -1,4 +1,4 @@
-import { ISpotifyAlbum, ISpotifyArtistTrim } from "./spotifyApi";
+import { ISpotifyAlbum, ISpotifyArtistTrim } from "jvb-spotty-models";
 
 export interface ISpotifyTrack {
   album: ISpotifyAlbum

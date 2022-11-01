@@ -1,5 +1,5 @@
 import { JwtPayload } from "jsonwebtoken";
-import { ISpotifyTokenResponse } from "./spotifyApi"
+import { ISpotifyTokenResponse } from "jvb-spotty-models";
 
 export interface IUser {
   email: string
