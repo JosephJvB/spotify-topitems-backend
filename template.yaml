@@ -45,6 +45,7 @@ Globals:
         SpotifyRedirectUri: !Ref SpotifyRedirectUri
 
 Resources:
+  # in future prefer to not have table defined in same template as lambda, that's gross
   SpotifyProfileTable:
     Type: AWS::DynamoDB::Table
     DeletionPolicy: Retain
@@ -60,6 +61,7 @@ Resources:
         ReadCapacityUnits: 1
         WriteCapacityUnits: 1
 
+  # lambda and gateway is fine tho
   HttpApiGateway:
     Type: AWS::Serverless::Api
     Properties:

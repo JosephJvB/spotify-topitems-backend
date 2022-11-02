@@ -41,14 +41,14 @@ export default class SpotifyClient {
     return r.data
   }
 
-  async getTopItems(
+  async getTopItems<T>(
     spotifyJson: ISpotifyJson,
     itemType: SpotifyItemType,
     range: SpotifyTopRange,
-    limit: number): Promise<ISpotifyTrack[] | ISpotifyArtist[]> {
+    limit: number): Promise<T[]> {
       await this.validateToken(spotifyJson)
       console.log('SpotifyClient.getTopItems:', itemType)
-      const r: AxiosResponse<ISpotifyPaginatedResponse<ISpotifyArtist | ISpotifyTrack>> = await axios({
+      const r: AxiosResponse<ISpotifyPaginatedResponse<T>> = await axios({
         url: `https://api.spotify.com/v1/me/top/${itemType}`,
         params: {
           limit: limit || 10,
@@ -59,7 +59,7 @@ export default class SpotifyClient {
           Authorization: 'Bearer ' + spotifyJson.access_token
         }
       })
-      return r.data.items as ISpotifyArtist[] | ISpotifyTrack[]
+      return r.data.items
   }
 
   // actually, if i refresh token, I need to save it back to spotifyProfile DDB with new timestamp

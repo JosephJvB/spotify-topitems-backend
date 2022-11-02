@@ -61,25 +61,11 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
     // it handles both spotifyClient and docClient
     const tokenBefore = spotifyToken.access_token
     const ts = Date.now()
-    // probably it's better to have two different methods
-    // rather than one method returning two types
-    // but this is one way to do it if you have to
-    const responseItems = await spotifyClient.getTopItems(spotifyToken, type, range, limit)
+    const responseItems = await spotifyClient.getTopItems<ISpotifyTrack | ISpotifyArtist>(spotifyToken, type, range, limit)
     if (tokenBefore != spotifyToken.access_token) {
       spotifyToken.ts = ts
       spotifyProfile.tokenJson = JSON.stringify(spotifyToken)
       await docClient.putSpotifyProfile(spotifyProfile)
-    }
-
-
-    let items: ISpotifyTrack[] | ISpotifyArtist[] = []
-    switch (type) {
-      case SpotifyItemType.tracks:
-        items = (responseItems as ISpotifyTrack[])
-        break
-      case SpotifyItemType.artists:
-        items = (responseItems as ISpotifyArtist[])
-        break
     }
 
     const newToken = authClient.signJwt({
@@ -90,7 +76,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
     return new HttpSuccess<ITopItemsResponse>({
       message: 'Top items success',
       token: newToken,
-      items,
+      items: responseItems,
     })
   } catch (e) {
     console.error(e)
