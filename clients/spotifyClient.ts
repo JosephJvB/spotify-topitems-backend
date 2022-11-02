@@ -1,6 +1,6 @@
 import axios, { AxiosRequestHeaders, AxiosResponse } from 'axios'
 import { ISpotifyJson } from '../models/ddb'
-import { ISpotifyArtist, ISpotifyPaginatedResponse, ISpotifyProfile, ISpotifyRefreshResponse, ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from 'jvb-spotty-models'
+import { IAudioFeatures, ISpotifyArtist, ISpotifyPaginatedResponse, ISpotifyProfile, ISpotifyRefreshResponse, ISpotifyTrack, SpotifyItemType, SpotifyTopRange } from 'jvb-spotty-models'
 
 export default class SpotifyClient {
   headers: AxiosRequestHeaders
@@ -60,6 +60,21 @@ export default class SpotifyClient {
         }
       })
       return r.data.items
+  }
+
+  async getAudioFeatures(spotifyJson: ISpotifyJson, trackIds: string): Promise<IAudioFeatures[]> {
+    await this.validateToken(spotifyJson)
+    console.log('SpotifyCient.getAudioFeatures')
+    const r: AxiosResponse<{ audio_features: IAudioFeatures[] }> = await axios({
+      url: `https://api.spotify.com/v1/audio-features`,
+      params: {
+        ids: trackIds
+      },
+      headers: {
+        Authorization: 'Bearer ' + spotifyJson.access_token
+      }
+    })
+    return r.data.audio_features
   }
 
   // actually, if i refresh token, I need to save it back to spotifyProfile DDB with new timestamp

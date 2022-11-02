@@ -1,5 +1,5 @@
 import { APIGatewayProxyResult } from "aws-lambda"
-import { ISpotifyArtist, ISpotifyTrack } from "jvb-spotty-models"
+import { IAudioFeatures, ISpotifyArtist, ISpotifyTrack } from "jvb-spotty-models"
 import { IQuiz } from "./quiz"
 
 export interface ICorsHeaders {
@@ -64,4 +64,8 @@ export interface ITopItemsResponse extends IBasicResponse {
 export interface IQuizResponse extends IBasicResponse {
   quiz: IQuiz
   answered: boolean
+}
+
+export interface IAudioFeaturesResponse extends IBasicResponse {
+  audioFeatures: IAudioFeatures[]
 }

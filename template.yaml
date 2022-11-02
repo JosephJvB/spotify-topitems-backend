@@ -98,6 +98,28 @@ Resources:
             Method: options
             RestApiId: !Ref HttpApiGateway
 
+  SpotifyAudioFeaturesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./dist
+      Handler: functions/audioFeatures.handler
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref SpotifyProfileTable
+      Events:
+        GetSpotifyAudioFeatures:
+          Type: Api
+          Properties:
+            Path: /spotify/audio-features
+            Method: get
+            RestApiId: !Ref HttpApiGateway
+        OptionsSpotifyAudioFeatures:
+          Type: Api
+          Properties:
+            Path: /spotify/audio-features
+            Method: options
+            RestApiId: !Ref HttpApiGateway
+
 Outputs:
   SpotifyProfileTable:
     Description: Store spotify records in nosql
@@ -108,3 +130,6 @@ Outputs:
   SpotifyTopFunction:
     Description: Get spotify top items
     Value: !Ref SpotifyTopFunction
+  SpotifyAudioFeaturesFunction:
+    Description: Get spotify track audio features
+    Value: !Ref SpotifyAudioFeaturesFunction
