@@ -33,6 +33,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
     const queryParams = new URLSearchParams(event.queryStringParameters)
     const type = queryParams.get('type') as SpotifyItemType
     const limit = Number(queryParams.get('limit'))
+    const offset = Number(queryParams.get('offset'))
     const range = queryParams.get('range') as SpotifyTopRange
     if (!type) {
       const msg = 'Request is missing "type" parameter'
@@ -61,7 +62,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
     // it handles both spotifyClient and docClient
     const tokenBefore = spotifyToken.access_token
     const ts = Date.now()
-    const responseItems = await spotifyClient.getTopItems<ISpotifyTrack | ISpotifyArtist>(spotifyToken, type, range, limit)
+    const responseItems = await spotifyClient.getTopItems<ISpotifyTrack | ISpotifyArtist>(spotifyToken, type, range, limit, offset)
     if (tokenBefore != spotifyToken.access_token) {
       spotifyToken.ts = ts
       spotifyProfile.tokenJson = JSON.stringify(spotifyToken)
