@@ -44,17 +44,18 @@ export default class SpotifyClient {
   async getTopItems<T>(
     spotifyJson: ISpotifyJson,
     itemType: SpotifyItemType,
-    range: SpotifyTopRange = SpotifyTopRange.shortTerm,
-    limit: number = 10,
-    offset: number = 0
+    range: SpotifyTopRange,
+    limit: number,
+    offset?: number
   ): Promise<T[]> {
       await this.validateToken(spotifyJson)
       console.log('SpotifyClient.getTopItems:', itemType)
       const r: AxiosResponse<ISpotifyPaginatedResponse<T>> = await axios({
         url: `https://api.spotify.com/v1/me/top/${itemType}`,
         params: {
-          limit,
-          offset,
+          // have issues using defaults in function params
+          limit: limit || 10,
+          offset: offset || 0,
           time_range: range,
         },
         headers: {
