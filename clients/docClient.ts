@@ -10,7 +10,7 @@ export enum TableNames {
 export default class DocClient {
   client: DocumentClient
   constructor() {
-    AWS.config.update({ region: 'us-west-2' })
+    AWS.config.update({ region: 'eu-west-2' })
     this.client = new AWS.DynamoDB.DocumentClient()
   }
 

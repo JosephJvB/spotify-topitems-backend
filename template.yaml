@@ -9,11 +9,6 @@ Parameters:
     AllowedValues:
       - "true"
       - "false"
-  SpotifyProfileTable:
-    Type: String
-    Default: SpotifyProfile
-    AllowedValues:
-      - SpotifyProfile
   JwtSecret:
     Type: String
     Default: '{{resolve:ssm:JafJwtSecret:1}}'
@@ -89,7 +84,7 @@ Resources:
       Handler: functions/spotifyTop.handler
       Policies:
         - DynamoDBCrudPolicy:
-            TableName: !Ref SpotifyProfileTable
+            TableName: SpotifyProfile
       Events:
         GetSpotifyTop:
           Type: Api
@@ -111,7 +106,7 @@ Resources:
       Handler: functions/audioFeatures.handler
       Policies:
         - DynamoDBCrudPolicy:
-            TableName: !Ref SpotifyProfileTable
+            TableName: SpotifyProfile
       Events:
         GetSpotifyAudioFeatures:
           Type: Api
